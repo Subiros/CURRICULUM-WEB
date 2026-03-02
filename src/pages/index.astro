@@ -1,0 +1,95 @@
+---
+console.log('Index ben executat.');
+
+import Nav from "../components/Navigator.astro"
+import TableCV from "../components/TableCV.astro";
+
+import '../styles/index.css'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Currículum Oriol Subirós</title>
+</head>
+<body>
+    <h1 id="titleCV">Curriculum Vitae, Oriol Subirós</h1>
+
+    <!-- NAVEGADOR PER A LA PÀGINA -->
+    <div class="navC">
+        <Nav></Nav>
+    </div>
+
+    <!-- APARTATS -->
+     <div id="aboutMe">
+        <h1>About me:</h1>
+        
+        <div class="aboutMeH">
+            <div class="aboutMeText">
+                <p>
+                    Hi, my name is Oriol Subirós, I am 20 years old and I am from Tarragona. I am a Web Application Developer (DAW graduate) with hands-on experience in web development, application maintenance, and technical support gained through internships and real-world projects. I have contributed to both front-end and back-end development, working with technologies such as HTML, CSS, JavaScript, PHP, Java, MySQL, MariaDB, and collaborating with teams to deliver functional, maintainable, and high-quality solutions. I enjoy learning new programming languages and exploring different areas of software development to continually expand my technical skills.
+                </p>
+                <p>
+                    Beyond my technical expertise, my background in sports education and coaching has strengthened my teamwork, communication, public speaking, adaptability, responsibility, and ability to perform under pressure. These soft skills allow me to collaborate effectively, solve problems creatively, and maintain a professional and productive attitude in fast-paced or challenging environments.
+                </p>
+                <p>
+                    I am highly motivated to continue growing as a programmer, exploring new technologies, frameworks, and development paradigms. I am eager to take on challenging projects, contribute meaningfully to a team, and combine my technical knowledge with my strong work ethic and commitment to learning. My goal is to become a well-rounded developer capable of tackling diverse problems, delivering value to users, and continuously evolving in the ever-changing world of web development.
+                </p>
+            </div>
+        </div>
+     </div>
+
+     <div id="education">
+        <h1>Education:</h1>
+        <ul>
+            <strong><li>High School. Tarragona</li></strong>
+            <p> 
+                Focused on general academic subjects and foundational knowledge. <br>
+                Graduated in 2021.
+            </p>
+
+            <strong><li>Web Application Development. Tarragona</li></strong>
+            <p>
+                I graduated from the Web Application Development program, gaining hands-on experience in both front-end and back-end development. I have worked with technologies such as HTML, CSS, JavaScript, PHP, Java, and databases like MySQL and MariaDB, building functional and maintainable web applications while collaborating on team projects. In addition to these languages, I also have basic knowledge of other programming languages and technologies, which I continue to explore and expand. <br>
+                Graduated in 2025.
+            </p>
+        </ul>
+     </div>
+
+     <div id="experience">
+        <h1>Professional experience:</h1>
+        <p>
+            I have experience in web application development, working on the creation, maintenance, and improvement of web-based solutions in professional environments. My work has involved both front-end and back-end development, where I have implemented features, fixed bugs, and supported existing systems to ensure stability, usability, and performance.
+        </p>
+        <p>
+            I have collaborated with development teams, followed technical specifications, and adapted to established workflows, gaining experience working with real codebases and production-oriented projects. I am familiar with understanding existing architectures, maintaining clean and readable code, and resolving technical issues efficiently.
+        </p>
+        <p>
+            Alongside my development experience, I have worked in educational and sports-related environments, which has strengthened key professional skills such as teamwork, communication, responsibility, adaptability, and problem-solving. These experiences have helped me develop a strong work ethic, attention to detail, and the ability to perform consistently in structured and demanding environments.
+        </p>
+
+        <!-- TAULA EXPERIÈNCIA -->
+        <TableCV></TableCV>
+
+        <!-- DESCARREGAR CV (arreglar) -->
+        <div id="downloadButtons">
+            <button id="downloadTable">Download Table CV (csv)</button>
+            <button id="downloadMyCV">Download Original CV (catalan pdf)</button>
+
+            <script src="/src/scripts/index.js"></script>
+        </div>
+     </div>
+
+     <div id="contact">
+        <span>Mail: <a href="mailto:oriolsubiros@gmail.com">oriolsubiros@gmail.com</a></span>
+        <span>Phone Number: <a href="tel:+34611620983">+34 611 620 983</a></span> <br>
+        <span>Linkedin: <a href="https://www.linkedin.com/in/oriol-subir%C3%B3s-2290b9301/">Linkedin profile</a></span>
+        <span>GitHub: <a href="https://github.com/Subiros">GitHub profile</a></span>
+     </div>
+</body>
+</html>
